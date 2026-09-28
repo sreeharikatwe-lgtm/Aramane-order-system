@@ -7,11 +7,7 @@
 <title>Aramane Family Restaurant | Smart Restaurant</title>
 
 <style>
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 :root{
 --gold:#e8b34d;
@@ -24,7 +20,6 @@ padding:0;
 --green:#27c77a;
 --red:#ef5350;
 --blue:#4d9cff;
---orange:#ff9f43;
 }
 
 body{
@@ -33,24 +28,12 @@ background:var(--dark);
 color:var(--text);
 }
 
-button,input,select{
-font:inherit;
-}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.hidden{display:none!important}
+a{text-decoration:none;color:inherit}
 
-button{
-cursor:pointer;
-}
-
-.hidden{
-display:none!important;
-}
-
-a{
-text-decoration:none;
-color:inherit;
-}
-
-/* ================= PUBLIC WEBSITE ================= */
+/* PUBLIC */
 
 .topbar{
 background:linear-gradient(90deg,#5b2d09,#a96d1c,#5b2d09);
@@ -111,9 +94,7 @@ gap:23px;
 font-size:10px;
 }
 
-.navlinks a:hover{
-color:var(--gold);
-}
+.navlinks a:hover{color:var(--gold)}
 
 .systemBtn{
 background:var(--gold);
@@ -160,9 +141,7 @@ line-height:.94;
 margin:22px 0;
 }
 
-.hero h1 span{
-color:var(--gold);
-}
+.hero h1 span{color:var(--gold)}
 
 .hero p{
 max-width:600px;
@@ -289,9 +268,7 @@ font-family:Georgia,serif;
 font-size:22px;
 }
 
-.contact{
-background:#101111;
-}
+.contact{background:#101111}
 
 .contactGrid{
 display:grid;
@@ -315,12 +292,11 @@ font-size:9px;
 line-height:2;
 }
 
-/* ================= ROLE SELECT ================= */
+/* PORTAL */
 
 .portal{
 min-height:100vh;
-background:
-radial-gradient(circle at top,#2b210e,#080909 45%);
+background:radial-gradient(circle at top,#2b210e,#080909 45%);
 }
 
 .portalTop{
@@ -337,9 +313,7 @@ font-family:Georgia,serif;
 font-size:17px;
 }
 
-.portalBrand span{
-color:var(--gold);
-}
+.portalBrand span{color:var(--gold)}
 
 .back{
 background:#202323;
@@ -401,11 +375,9 @@ font-size:21px;
 margin:8px 0 20px;
 }
 
-.roleCard button{
-width:100%;
-}
+.roleCard button{width:100%}
 
-/* ================= LOGIN ================= */
+/* LOGIN */
 
 .login{
 max-width:390px;
@@ -417,9 +389,7 @@ padding:30px;
 text-align:center;
 }
 
-.loginIcon{
-font-size:45px;
-}
+.loginIcon{font-size:45px}
 
 .login h2{
 font-family:Georgia,serif;
@@ -433,9 +403,7 @@ font-size:10px;
 margin:8px 0 20px;
 }
 
-.input,
-.field,
-select{
+.input,.field,select{
 width:100%;
 background:#0d0f0f;
 border:1px solid #353838;
@@ -445,11 +413,9 @@ padding:13px;
 outline:none;
 }
 
-.login .btn{
-width:100%;
-}
+.login .btn{width:100%}
 
-/* ================= DASHBOARD ================= */
+/* DASHBOARD */
 
 .dashboard{
 max-width:1250px;
@@ -496,9 +462,7 @@ background:#2b2110;
 color:var(--gold);
 }
 
-.main{
-min-width:0;
-}
+.main{min-width:0}
 
 .pageHead{
 display:flex;
@@ -636,13 +600,9 @@ padding:12px 0;
 border-bottom:1px solid #272929;
 }
 
-.row:last-child{
-border-bottom:0;
-}
+.row:last-child{border-bottom:0}
 
-.row strong{
-font-size:11px;
-}
+.row strong{font-size:11px}
 
 .row small{
 display:block;
@@ -717,9 +677,7 @@ border-radius:12px;
 padding:14px;
 }
 
-.menuItem h4{
-font-size:11px;
-}
+.menuItem h4{font-size:11px}
 
 .menuItem p{
 font-size:8px;
@@ -776,9 +734,7 @@ justify-content:center;
 padding:15px;
 }
 
-.modal.show{
-display:flex;
-}
+.modal.show{display:flex}
 
 .modalBox{
 width:min(520px,100%);
@@ -826,20 +782,15 @@ transform:translateY(100px);
 transition:.3s;
 }
 
-.toast.show{
-transform:none;
-}
+.toast.show{transform:none}
 
 /* MOBILE */
 
 @media(max-width:850px){
 
-.navlinks{
-display:none;
-}
+.navlinks{display:none}
 
-.cards,
-.photos{
+.cards,.photos{
 grid-template-columns:1fr 1fr;
 }
 
@@ -856,9 +807,7 @@ overflow:auto;
 gap:4px;
 }
 
-.sideTitle{
-display:none;
-}
+.sideTitle{display:none}
 
 .sideBtn{
 min-width:max-content;
@@ -868,8 +817,7 @@ min-width:max-content;
 grid-template-columns:1fr 1fr;
 }
 
-.grid,
-.menuGrid{
+.grid,.menuGrid{
 grid-template-columns:1fr 1fr;
 }
 
@@ -877,17 +825,11 @@ grid-template-columns:1fr 1fr;
 
 @media(max-width:600px){
 
-.hero{
-min-height:620px;
-}
+.hero{min-height:620px}
 
-.hero h1{
-font-size:50px;
-}
+.hero h1{font-size:50px}
 
-.roleCards{
-grid-template-columns:1fr;
-}
+.roleCards{grid-template-columns:1fr}
 
 .roleSelection{
 margin:35px auto;
@@ -925,20 +867,15 @@ height:62px;
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =====================================================
-PUBLIC WEBSITE
-===================================================== -->
+<!-- PUBLIC WEBSITE -->
 
 <div id="publicPage">
 
 <div class="topbar">
 🍽️ ARAMANE FAMILY RESTAURANT • MCC B BLOCK • DAVANAGERE
 </div>
-
 
 <nav class="nav">
 
@@ -953,27 +890,18 @@ PUBLIC WEBSITE
 
 </a>
 
-
 <div class="navlinks">
-
 <a href="#about">About</a>
 <a href="#specials">Specials</a>
 <a href="#experience">Experience</a>
 <a href="#contact">Contact</a>
-
 </div>
 
-
-<button
-class="systemBtn"
-onclick="openSystem()">
-
+<button class="systemBtn" onclick="openSystem()">
 SMART SYSTEM
-
 </button>
 
 </nav>
-
 
 <section class="hero">
 
@@ -997,13 +925,11 @@ restaurant experience.
 
 <div class="heroBtns">
 
-<a href="#experience"
-class="btn gold">
+<a href="#experience" class="btn gold">
 EXPLORE RESTAURANT
 </a>
 
-<a href="tel:+918147622100"
-class="btn outline">
+<a href="tel:+918147622100" class="btn outline">
 ☎ CALL RESTAURANT
 </a>
 
@@ -1012,7 +938,6 @@ class="btn outline">
 </div>
 
 </section>
-
 
 <section class="section" id="about">
 
@@ -1031,7 +956,6 @@ popular Indian, biryani and Chinese dishes.
 
 </div>
 
-
 <div class="cards">
 
 <div class="publicCard">
@@ -1049,7 +973,6 @@ for everyday dining.
 
 </div>
 
-
 <div class="publicCard">
 
 <div class="publicIcon">🍗</div>
@@ -1064,7 +987,6 @@ a satisfying meal.
 </p>
 
 </div>
-
 
 <div class="publicCard">
 
@@ -1085,7 +1007,6 @@ friends and groups.
 
 </section>
 
-
 <section class="section" id="specials">
 
 <div class="title">
@@ -1103,7 +1024,6 @@ Restaurant-owned photographs can replace them later.
 
 </div>
 
-
 <div class="photos">
 
 <div class="photo"
@@ -1113,14 +1033,12 @@ style="background-image:url('https://images.unsplash.com/photo-1589302168068-964
 
 </div>
 
-
 <div class="photo"
 style="background-image:url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=900&q=90')">
 
 <span>Indian Favourites</span>
 
 </div>
-
 
 <div class="photo"
 style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=90')">
@@ -1132,7 +1050,6 @@ style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c7
 </div>
 
 </section>
-
 
 <section class="section" id="experience">
 
@@ -1151,7 +1068,6 @@ connect the waiter, kitchen and owner.
 
 </div>
 
-
 <div class="cards">
 
 <div class="publicCard">
@@ -1163,7 +1079,6 @@ the order directly to the kitchen.
 </p>
 </div>
 
-
 <div class="publicCard">
 <div class="publicIcon">👨‍🍳</div>
 <h3>Kitchen Display</h3>
@@ -1172,7 +1087,6 @@ Kitchen receives orders and updates Preparing,
 Ready and Out of Stock.
 </p>
 </div>
-
 
 <div class="publicCard">
 <div class="publicIcon">👑</div>
@@ -1187,7 +1101,6 @@ from one private dashboard.
 
 </section>
 
-
 <section class="section contact" id="contact">
 
 <div class="title">
@@ -1199,7 +1112,6 @@ Aramane Family Restaurant
 </h2>
 
 </div>
-
 
 <div class="contactGrid">
 
@@ -1242,7 +1154,6 @@ OPEN GOOGLE
 
 </div>
 
-
 <iframe
 class="map"
 src="https://www.google.com/maps?q=Aramane%20Family%20Restaurant%20Davanagere&output=embed"
@@ -1252,7 +1163,6 @@ loading="lazy">
 </div>
 
 </section>
-
 
 <footer>
 
@@ -1273,14 +1183,9 @@ MCC B Block • Shamanur Road • Davanagere
 </div>
 
 
+<!-- SMART SYSTEM -->
 
-<!-- =====================================================
-SMART SYSTEM
-===================================================== -->
-
-<div id="systemPage"
-class="portal hidden">
-
+<div id="systemPage" class="portal hidden">
 
 <div class="portalTop">
 
@@ -1288,12 +1193,8 @@ class="portal hidden">
 ARAMANE <span>SMART RESTAURANT</span>
 </div>
 
-<button
-class="back"
-onclick="backToWebsite()">
-
+<button class="back" onclick="backToWebsite()">
 ← RESTAURANT WEBSITE
-
 </button>
 
 </div>
@@ -1301,8 +1202,7 @@ onclick="backToWebsite()">
 
 <!-- ROLE SELECTION -->
 
-<div id="roleSelection"
-class="roleSelection">
+<div id="roleSelection" class="roleSelection">
 
 <h1>
 Smart Restaurant System
@@ -1312,9 +1212,7 @@ Smart Restaurant System
 Choose your work area
 </p>
 
-
 <div class="roleCards">
-
 
 <div class="roleCard">
 
@@ -1390,7 +1288,6 @@ KITCHEN LOGIN
 
 </div>
 
-
 </div>
 
 </div>
@@ -1398,11 +1295,9 @@ KITCHEN LOGIN
 
 <!-- LOGIN -->
 
-<div id="loginScreen"
-class="login hidden">
+<div id="loginScreen" class="login hidden">
 
-<div id="loginIcon"
-class="loginIcon">
+<div id="loginIcon" class="loginIcon">
 👑
 </div>
 
@@ -1414,24 +1309,31 @@ Admin Login
 Owner control centre
 </p>
 
+<input
+id="email"
+class="input"
+type="email"
+placeholder="Email address"
+autocomplete="username">
+
+<br><br>
 
 <input
 id="password"
 class="input"
 type="password"
 placeholder="Enter password"
+autocomplete="current-password"
 onkeydown="if(event.key==='Enter')login()">
-
 
 <button
 class="btn gold"
-style="width:100%;margin-top:5px"
+style="width:100%;margin-top:12px"
 onclick="login()">
 
 LOGIN
 
 </button>
-
 
 <button
 class="btn outline"
@@ -1447,34 +1349,26 @@ onclick="backToRoles()">
 
 <!-- DASHBOARD -->
 
-<div id="dashboard"
-class="hidden">
+<div id="dashboard" class="hidden">
 
 <div class="dashboard">
 
-<aside
-id="sidebar"
-class="sidebar">
+<aside id="sidebar" class="sidebar">
 </aside>
 
-<main
-id="mainContent"
-class="main">
+<main id="mainContent" class="main">
 </main>
 
 </div>
 
 </div>
 
-
 </div>
 
 
 <!-- MODAL -->
 
-<div
-id="modal"
-class="modal">
+<div id="modal" class="modal">
 
 <div class="modalBox">
 
@@ -1487,22 +1381,66 @@ Add Item
 <button
 class="close"
 onclick="closeModal()">
+
 ✕
+
 </button>
 
 </div>
 
-<div id="modalBody"></div>
-
+<div id="modalBody">
 </div>
 
 </div>
 
-
-<div
-id="toast"
-class="toast">
 </div>
+
+
+<div id="toast" class="toast">
+</div>
+
+
+<!-- =====================================================
+FIREBASE
+===================================================== -->
+
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-app-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-auth-compat.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore-compat.js"></script>
+
+<script>
+
+const firebaseConfig = {
+
+apiKey:
+"AIzaSyCpzvpvr5LiN_yAdv8FdxGtA8lWb7lS_j8",
+
+authDomain:
+"aramane-smart-restaurant.firebaseapp.com",
+
+projectId:
+"aramane-smart-restaurant",
+
+storageBucket:
+"aramane-smart-restaurant.firebasestorage.app",
+
+messagingSenderId:
+"405121663457",
+
+appId:
+"1:405121663457:web:7bf34f06a2f566084f52a0"
+
+};
+
+firebase.initializeApp(firebaseConfig);
+
+const auth = firebase.auth();
+
+const db = firebase.firestore();
+
+</script>
 
 
 <script>
@@ -1511,14 +1449,14 @@ class="toast">
 DATA
 ===================================================== */
 
-let role="";
+let role = "";
 
-let currentTable=null;
+let currentTable = null;
 
-let cart=[];
+let cart = [];
 
 
-let state=
+let state =
 JSON.parse(localStorage.getItem("aramaneSmart"))
 ||
 {
@@ -1726,7 +1664,7 @@ document
 
 function chooseRole(selected){
 
-role=selected;
+role = selected;
 
 document
 .getElementById("roleSelection")
@@ -1739,7 +1677,7 @@ document
 .remove("hidden");
 
 
-const data={
+const data = {
 
 admin:{
 icon:"👑",
@@ -1764,56 +1702,108 @@ description:"Orders & stock control"
 
 document
 .getElementById("loginIcon")
-.innerText=
+.innerText =
 data[role].icon;
 
 document
 .getElementById("loginTitle")
-.innerText=
+.innerText =
 data[role].title;
 
 document
 .getElementById("loginDescription")
-.innerText=
+.innerText =
 data[role].description;
+
+
+const roleEmails = {
+
+admin:
+"aramane.admin@gmail.com",
+
+waiter:
+"aramane.waiter@gmail.com",
+
+kitchen:
+"aramane.kitchen@gmail.com"
+
+};
+
+
+document
+.getElementById("email")
+.value =
+roleEmails[role];
 
 document
 .getElementById("password")
-.value="";
+.value = "";
 
 }
 
 
 /* =====================================================
-LOGIN
+FIREBASE LOGIN
 ===================================================== */
 
-function login(){
+async function login(){
 
-const password=
+const email =
+document
+.getElementById("email")
+.value
+.trim()
+.toLowerCase();
+
+const password =
 document
 .getElementById("password")
 .value;
 
 
-const passwords={
+const roleEmails = {
 
-admin:"admin123",
+admin:
+"aramane.admin@gmail.com",
 
-waiter:"waiter123",
+waiter:
+"aramane.waiter@gmail.com",
 
-kitchen:"kitchen123"
+kitchen:
+"aramane.kitchen@gmail.com"
 
 };
 
 
-if(password!==passwords[role]){
+if(!email || !password){
 
-toast("Incorrect password");
+toast("Enter email and password");
 
 return;
 
 }
+
+
+if(email !== roleEmails[role]){
+
+toast(
+"This email does not belong to the selected role"
+);
+
+return;
+
+}
+
+
+try{
+
+toast("Signing in...");
+
+
+await auth.signInWithEmailAndPassword(
+email,
+password
+);
 
 
 document
@@ -1830,14 +1820,47 @@ document
 buildSidebar();
 
 
-if(role==="admin")
+if(role === "admin")
 adminDashboard();
 
-if(role==="waiter")
+if(role === "waiter")
 waiterDashboard();
 
-if(role==="kitchen")
+if(role === "kitchen")
 kitchenDashboard();
+
+
+toast("Login successful ✓");
+
+
+}
+
+catch(error){
+
+console.error(error);
+
+
+if(
+error.code === "auth/invalid-credential" ||
+error.code === "auth/wrong-password" ||
+error.code === "auth/user-not-found"
+){
+
+toast(
+"Incorrect email or password"
+);
+
+}
+
+else{
+
+toast(
+"Login error: " + error.message
+);
+
+}
+
+}
 
 }
 
@@ -1848,60 +1871,75 @@ SIDEBAR
 
 function buildSidebar(){
 
-let html="";
+let html = "";
 
 
-if(role==="admin"){
+if(role === "admin"){
 
-html=`
+html = `
 
 <div class="sideTitle">
 OWNER CONTROL
 </div>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminDashboard()">
 📊 Dashboard
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminWaiters()">
 👥 Waiters
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminMenu()">
 🍽️ Daily Menu
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminTables()">
 🪑 Tables
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminOrders()">
 📋 Orders
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminKitchen()">
 👨‍🍳 Kitchen
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminPayments()">
 💳 Payments
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminCustomers()">
 👤 Customers
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="adminActivity()">
 📝 Activity Log
+</button>
+
+<button
+class="sideBtn"
+onclick="logout()">
+🚪 Logout
 </button>
 
 `;
@@ -1909,22 +1947,30 @@ onclick="adminActivity()">
 }
 
 
-if(role==="waiter"){
+if(role === "waiter"){
 
-html=`
+html = `
 
 <div class="sideTitle">
 WAITER
 </div>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="waiterDashboard()">
 🪑 Tables & Orders
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="waiterOrders()">
 📋 My Orders
+</button>
+
+<button
+class="sideBtn"
+onclick="logout()">
+🚪 Logout
 </button>
 
 `;
@@ -1932,22 +1978,30 @@ onclick="waiterOrders()">
 }
 
 
-if(role==="kitchen"){
+if(role === "kitchen"){
 
-html=`
+html = `
 
 <div class="sideTitle">
 KITCHEN
 </div>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="kitchenDashboard()">
 🔥 Kitchen Orders
 </button>
 
-<button class="sideBtn"
+<button
+class="sideBtn"
 onclick="kitchenStock()">
 📦 Stock
+</button>
+
+<button
+class="sideBtn"
+onclick="logout()">
+🚪 Logout
 </button>
 
 `;
@@ -1957,7 +2011,50 @@ onclick="kitchenStock()">
 
 document
 .getElementById("sidebar")
-.innerHTML=html;
+.innerHTML = html;
+
+}
+
+
+/* =====================================================
+LOGOUT
+===================================================== */
+
+async function logout(){
+
+try{
+
+await auth.signOut();
+
+}
+catch(error){
+
+console.log(error);
+
+}
+
+role = "";
+
+currentTable = null;
+
+cart = [];
+
+document
+.getElementById("dashboard")
+.classList
+.add("hidden");
+
+document
+.getElementById("loginScreen")
+.classList
+.add("hidden");
+
+document
+.getElementById("roleSelection")
+.classList
+.remove("hidden");
+
+toast("Logged out");
 
 }
 
@@ -1970,34 +2067,41 @@ function adminDashboard(){
 
 buildSidebar();
 
-const active=
+
+const active =
 state.tables.filter(
-t=>t.status!=="Available"
+t => t.status !== "Available"
 ).length;
 
-const preparing=
+
+const preparing =
 state.orders.filter(
-o=>o.status==="Preparing"
+o => o.status === "Preparing"
 ).length;
 
-const ready=
+
+const ready =
 state.orders.filter(
-o=>o.status==="Ready"
+o => o.status === "Ready"
 ).length;
 
-const pending=
+
+const pending =
 state.orders.filter(
-o=>o.status==="Payment Pending"
+o => o.status === "Payment Pending"
 ).length;
 
-const sales=
+
+const sales =
 state.payments.reduce(
-(a,p)=>a+p.amount,
+(a,p) => a + p.amount,
 0
 );
 
 
-document.getElementById("mainContent").innerHTML=`
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -2153,7 +2257,7 @@ MANAGE
 </div>
 
 
-${state.waiters.map(w=>`
+${state.waiters.map(w => `
 
 <div class="row">
 
@@ -2170,10 +2274,10 @@ Waiter ID ${w.id}
 </div>
 
 <span class="status ${
-w.active?"available":"out"
+w.active ? "available" : "out"
 }">
 
-${w.active?"ACTIVE":"OFFLINE"}
+${w.active ? "ACTIVE" : "OFFLINE"}
 
 </span>
 
@@ -2192,19 +2296,23 @@ ${w.active?"ACTIVE":"OFFLINE"}
 
 function tableHTML(t){
 
-let cls="available";
+let cls = "available";
 
-if(t.status==="Occupied")
-cls="occupied";
 
-if(t.status==="Preparing")
-cls="preparing";
+if(t.status === "Occupied")
+cls = "occupied";
 
-if(t.status==="Ready")
-cls="ready";
 
-if(t.status==="Payment Pending")
-cls="payment";
+if(t.status === "Preparing")
+cls = "preparing";
+
+
+if(t.status === "Ready")
+cls = "ready";
+
+
+if(t.status === "Payment Pending")
+cls = "payment";
 
 
 return `
@@ -2219,11 +2327,17 @@ TABLE ${t.id}
 ${t.status.toUpperCase()}
 </span>
 
-${t.orderId?
-
-`<small style="display:block;color:#777;margin-top:7px">
+${
+t.orderId
+?
+`
+<small style="display:block;color:#777;margin-top:7px">
 Order #${t.orderId}
-</small>`:""}
+</small>
+`
+:
+""
+}
 
 </div>
 
@@ -2236,14 +2350,14 @@ Order #${t.orderId}
 
 function alerts(){
 
-let html="";
+let html = "";
 
 
 state.menu
-.filter(m=>!m.available)
-.forEach(m=>{
+.filter(m => !m.available)
+.forEach(m => {
 
-html+=`
+html += `
 
 <div class="alert">
 
@@ -2258,13 +2372,13 @@ is OUT OF STOCK
 
 
 state.orders
-.filter(o=>
-o.status==="Preparing" &&
-Date.now()-o.created>15*60*1000
+.filter(o =>
+o.status === "Preparing" &&
+Date.now() - o.created > 15 * 60 * 1000
 )
-.forEach(o=>{
+.forEach(o => {
 
-html+=`
+html += `
 
 <div class="alert">
 
@@ -2280,13 +2394,16 @@ has a delayed order
 
 if(!html){
 
-html=`
+html = `
+
 <div class="notice">
 ✓ No critical alerts
 </div>
+
 `;
 
 }
+
 
 return html;
 
@@ -2301,7 +2418,10 @@ function adminWaiters(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -2332,7 +2452,7 @@ onclick="addWaiterModal()">
 
 👥 Active waiters:
 <strong>
-${state.waiters.filter(w=>w.active).length}
+${state.waiters.filter(w => w.active).length}
 </strong>
 
 &nbsp;&nbsp;
@@ -2347,7 +2467,7 @@ ${state.waiters.length}
 
 <div class="panel">
 
-${state.waiters.map(w=>`
+${state.waiters.map(w => `
 
 <div class="row">
 
@@ -2367,11 +2487,11 @@ Waiter ID ${w.id}
 
 <button
 class="action ${
-w.active?"redAction":"greenAction"
+w.active ? "redAction" : "greenAction"
 }"
 onclick="toggleWaiter(${w.id})">
 
-${w.active?"DISABLE":"ACTIVATE"}
+${w.active ? "DISABLE" : "ACTIVATE"}
 
 </button>
 
@@ -2428,24 +2548,33 @@ ADD WAITER
 
 function addWaiter(){
 
-const name=
+const name =
 document
 .getElementById("waiterName")
 .value
 .trim();
 
-if(!name)return;
+
+if(!name)
+return;
+
 
 state.waiters.push({
+
 id:Date.now(),
+
 name,
+
 active:true
+
 });
 
+
 activity(
-"Admin added waiter "+name,
+"Admin added waiter " + name,
 "Admin"
 );
+
 
 save();
 
@@ -2460,21 +2589,26 @@ toast("Waiter added");
 
 function toggleWaiter(id){
 
-const w=
+const w =
 state.waiters.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!w)return;
 
-w.active=!w.active;
+if(!w)
+return;
+
+
+w.active = !w.active;
+
 
 activity(
-"Admin "+
-(w.active?"activated ":"disabled ")+
+"Admin " +
+(w.active ? "activated " : "disabled ") +
 w.name,
 "Admin"
 );
+
 
 save();
 
@@ -2485,27 +2619,33 @@ adminWaiters();
 
 function removeWaiter(id){
 
-const w=
+const w =
 state.waiters.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!w)return;
+
+if(!w)
+return;
+
 
 if(!confirm(
-"Remove "+w.name+"?"
+"Remove " + w.name + "?"
 ))
 return;
 
-state.waiters=
+
+state.waiters =
 state.waiters.filter(
-x=>x.id!==id
+x => x.id !== id
 );
 
+
 activity(
-"Admin removed waiter "+w.name,
+"Admin removed waiter " + w.name,
 "Admin"
 );
+
 
 save();
 
@@ -2522,7 +2662,10 @@ function adminMenu(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -2560,7 +2703,7 @@ available or out of stock.
 
 <div class="panel">
 
-${state.menu.map(m=>`
+${state.menu.map(m => `
 
 <div class="row">
 
@@ -2579,11 +2722,11 @@ ${m.cat} • ₹${m.price}
 <div>
 
 <span class="status ${
-m.available?"available":"out"
+m.available ? "available" : "out"
 }">
 
-${m.available?
-"AVAILABLE":
+${m.available ?
+"AVAILABLE" :
 "OUT OF STOCK"}
 
 </span>
@@ -2617,10 +2760,10 @@ REMOVE
 }
 
 
-function menuModal(item=null){
+function menuModal(item = null){
 
 openModal(
-item?"Edit Menu Item":"Add Menu Item",
+item ? "Edit Menu Item" : "Add Menu Item",
 
 `
 
@@ -2630,14 +2773,14 @@ item?"Edit Menu Item":"Add Menu Item",
 id="itemName"
 class="field"
 placeholder="Item name"
-value="${item?item.name:""}">
+value="${item ? item.name : ""}">
 
 <input
 id="itemPrice"
 class="field"
 type="number"
 placeholder="Price"
-value="${item?item.price:""}">
+value="${item ? item.price : ""}">
 
 </div>
 
@@ -2662,13 +2805,15 @@ value="${item?item.price:""}">
 <button
 class="btn gold"
 onclick="${
-item?
-'updateMenu('+item.id+')':
-'addMenu()'
+item
+?
+"updateMenu(" + item.id + ")"
+:
+"addMenu()"
 }">
 
-${item?
-"SAVE CHANGES":
+${item ?
+"SAVE CHANGES" :
 "ADD TO TODAY'S MENU"}
 
 </button>
@@ -2676,11 +2821,12 @@ ${item?
 `
 );
 
+
 if(item){
 
 document
 .getElementById("itemCat")
-.value=item.cat;
+.value = item.cat;
 
 }
 
@@ -2689,24 +2835,30 @@ document
 
 function addMenu(){
 
-const name=
+const name =
 document
 .getElementById("itemName")
-.value.trim();
+.value
+.trim();
 
-const price=
+
+const price =
 Number(
 document
 .getElementById("itemPrice")
 .value
 );
 
-const cat=
+
+const cat =
 document
 .getElementById("itemCat")
 .value;
 
-if(!name||!price)return;
+
+if(!name || !price)
+return;
+
 
 state.menu.push({
 
@@ -2722,10 +2874,12 @@ available:true
 
 });
 
+
 activity(
-"Admin added menu item "+name,
+"Admin added menu item " + name,
 "Admin"
 );
+
 
 save();
 
@@ -2740,10 +2894,11 @@ toast("Menu item added");
 
 function editMenu(id){
 
-const item=
+const item =
 state.menu.find(
-x=>x.id===id
+x => x.id === id
 );
+
 
 if(item)
 menuModal(item);
@@ -2753,34 +2908,42 @@ menuModal(item);
 
 function updateMenu(id){
 
-const item=
+const item =
 state.menu.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!item)return;
 
-item.name=
+if(!item)
+return;
+
+
+item.name =
 document
 .getElementById("itemName")
-.value.trim();
+.value
+.trim();
 
-item.price=
+
+item.price =
 Number(
 document
 .getElementById("itemPrice")
 .value
 );
 
-item.cat=
+
+item.cat =
 document
 .getElementById("itemCat")
 .value;
 
+
 activity(
-"Admin edited "+item.name,
+"Admin edited " + item.name,
 "Admin"
 );
+
 
 save();
 
@@ -2793,27 +2956,34 @@ adminMenu();
 
 function removeMenu(id){
 
-const item=
+const item =
 state.menu.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!item)return;
+
+if(!item)
+return;
+
 
 if(!confirm(
-"Remove "+item.name+" from today's menu?"
+"Remove " + item.name +
+" from today's menu?"
 ))
 return;
 
-state.menu=
+
+state.menu =
 state.menu.filter(
-x=>x.id!==id
+x => x.id !== id
 );
 
+
 activity(
-"Admin removed "+item.name,
+"Admin removed " + item.name,
 "Admin"
 );
+
 
 save();
 
@@ -2830,7 +3000,10 @@ function adminTables(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -2868,7 +3041,10 @@ function adminOrders(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -2890,7 +3066,9 @@ Owner can monitor every order
 <div class="panel">
 
 ${
-state.orders.length?
+state.orders.length
+
+?
 
 state.orders
 .slice()
@@ -2900,9 +3078,11 @@ state.orders
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 No orders yet.
-</div>`
+</div>
+`
 
 }
 
@@ -2928,7 +3108,7 @@ return `
 <small>
 
 ${o.items
-.map(i=>i.name+" ×"+i.qty)
+.map(i => i.name + " ×" + i.qty)
 .join(", ")}
 
 <br>
@@ -2946,10 +3126,22 @@ ${o.time}
 <div>
 
 <span class="status ${
-o.status==="Ready"?"ready":
-o.status==="Preparing"?"preparing":
-o.status==="Payment Pending"?"payment":
-o.status==="Paid"?"available":
+o.status === "Ready"
+?
+"ready"
+:
+o.status === "Preparing"
+?
+"preparing"
+:
+o.status === "Payment Pending"
+?
+"payment"
+:
+o.status === "Paid"
+?
+"available"
+:
 "occupied"
 }">
 
@@ -2980,13 +3172,20 @@ function adminKitchen(){
 
 buildSidebar();
 
-const active=
+
+const active =
 state.orders.filter(
-o=>["New","Preparing","Ready"]
-.includes(o.status)
+o => [
+"New",
+"Preparing",
+"Ready"
+].includes(o.status)
 );
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3010,28 +3209,28 @@ Owner view of kitchen operations
 <div class="stat">
 <small>NEW</small>
 <strong>
-${state.orders.filter(o=>o.status==="New").length}
+${state.orders.filter(o => o.status === "New").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>PREPARING</small>
 <strong>
-${state.orders.filter(o=>o.status==="Preparing").length}
+${state.orders.filter(o => o.status === "Preparing").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>READY</small>
 <strong>
-${state.orders.filter(o=>o.status==="Ready").length}
+${state.orders.filter(o => o.status === "Ready").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>OUT OF STOCK</small>
 <strong>
-${state.menu.filter(m=>!m.available).length}
+${state.menu.filter(m => !m.available).length}
 </strong>
 </div>
 
@@ -3041,13 +3240,19 @@ ${state.menu.filter(m=>!m.available).length}
 <div class="panel">
 
 ${
-active.length?
+active.length
 
-active.map(kitchenOrder).join(""):
+?
 
-`<div class="notice">
+active.map(kitchenOrder).join("")
+
+:
+
+`
+<div class="notice">
 ✓ Kitchen is clear
-</div>`
+</div>
+`
 
 }
 
@@ -3059,29 +3264,36 @@ active.map(kitchenOrder).join(""):
 
 
 /* =====================================================
-ADMIN PAYMENTS
+PAYMENTS
 ===================================================== */
 
 function adminPayments(){
 
 buildSidebar();
 
-const total=
+
+const total =
 state.payments.reduce(
-(a,p)=>a+p.amount,0
+(a,p) => a + p.amount,
+0
 );
 
-const cash=
+
+const cash =
 paymentTotal("Cash");
 
-const upi=
+
+const upi =
 paymentTotal("UPI");
 
-const card=
+
+const card =
 paymentTotal("Card");
 
 
-document.getElementById("mainContent").innerHTML=`
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3103,31 +3315,54 @@ Owner-only payment monitoring
 <div class="stats">
 
 <div class="stat">
-<small>TOTAL</small>
+
+<small>
+TOTAL
+</small>
+
 <strong>
 ₹${total.toLocaleString()}
 </strong>
+
 </div>
 
+
 <div class="stat">
-<small>CASH</small>
+
+<small>
+CASH
+</small>
+
 <strong>
 ₹${cash.toLocaleString()}
 </strong>
+
 </div>
 
+
 <div class="stat">
-<small>UPI</small>
+
+<small>
+UPI
+</small>
+
 <strong>
 ₹${upi.toLocaleString()}
 </strong>
+
 </div>
 
+
 <div class="stat">
-<small>CARD</small>
+
+<small>
+CARD
+</small>
+
 <strong>
 ₹${card.toLocaleString()}
 </strong>
+
 </div>
 
 </div>
@@ -3136,12 +3371,14 @@ Owner-only payment monitoring
 <div class="panel">
 
 ${
-state.payments.length?
+state.payments.length
+
+?
 
 state.payments
 .slice()
 .reverse()
-.map(p=>`
+.map(p => `
 
 <div class="row">
 
@@ -3169,9 +3406,11 @@ PAID
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 No payments yet.
-</div>`
+</div>
+`
 
 }
 
@@ -3185,8 +3424,11 @@ No payments yet.
 function paymentTotal(method){
 
 return state.payments
-.filter(p=>p.method===method)
-.reduce((a,p)=>a+p.amount,0);
+.filter(p => p.method === method)
+.reduce(
+(a,p) => a + p.amount,
+0
+);
 
 }
 
@@ -3199,7 +3441,10 @@ function adminCustomers(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3221,9 +3466,11 @@ Repeat customer monitoring
 <div class="panel">
 
 ${
-state.customers.length?
+state.customers.length
 
-state.customers.map(c=>`
+?
+
+state.customers.map(c => `
 
 <div class="row">
 
@@ -3242,14 +3489,20 @@ Total spent: ₹${c.spent}
 </div>
 
 <span class="status ${
-c.visits>=4?
-"available":
+c.visits >= 4
+?
+"available"
+:
 "occupied"
 }">
 
-${c.visits>=4?
-"REGULAR":
-"OCCASIONAL"}
+${
+c.visits >= 4
+?
+"REGULAR"
+:
+"OCCASIONAL"
+}
 
 </span>
 
@@ -3259,9 +3512,11 @@ ${c.visits>=4?
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 Customer information appears after completed payments.
-</div>`
+</div>
+`
 
 }
 
@@ -3280,7 +3535,10 @@ function adminActivity(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3302,12 +3560,14 @@ Owner-only operational history
 <div class="panel">
 
 ${
-state.activities.length?
+state.activities.length
+
+?
 
 state.activities
 .slice()
 .reverse()
-.map(a=>`
+.map(a => `
 
 <div class="row">
 
@@ -3333,9 +3593,11 @@ ${a.role}
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 No activity yet.
-</div>`
+</div>
+`
 
 }
 
@@ -3354,7 +3616,10 @@ function waiterDashboard(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3394,13 +3659,19 @@ ${state.tables.map(tableHTML).join("")}
 
 
 ${
-currentTable?
+currentTable
 
-waiterOrderScreen():
+?
 
-`<div class="notice">
+waiterOrderScreen()
+
+:
+
+`
+<div class="notice">
 Select an available table to begin.
-</div>`
+</div>
+`
 
 }
 
@@ -3413,34 +3684,43 @@ document.addEventListener(
 "click",
 function(e){
 
-const card=
+const card =
 e.target.closest(".tableCard");
 
-if(!card)return;
 
-if(role!=="waiter")return;
+if(!card)
+return;
 
-const number=
+
+if(role !== "waiter")
+return;
+
+
+const number =
 card
 .querySelector(".tableNum")
 ?.innerText
 .match(/\d+/);
 
-if(!number)return;
 
-const table=
+if(!number)
+return;
+
+
+const table =
 state.tables.find(
-t=>t.id===Number(number[0])
+t => t.id === Number(number[0])
 );
+
 
 if(
 table &&
-table.status==="Available"
+table.status === "Available"
 ){
 
-currentTable=table.id;
+currentTable = table.id;
 
-cart=[];
+cart = [];
 
 waiterDashboard();
 
@@ -3452,11 +3732,12 @@ waiterDashboard();
 
 function waiterOrderScreen(){
 
-const total=
+const total =
 cart.reduce(
-(a,i)=>a+i.price*i.qty,
+(a,i) => a + i.price * i.qty,
 0
 );
+
 
 return `
 
@@ -3481,7 +3762,7 @@ CANCEL
 
 <div class="menuGrid">
 
-${state.menu.map(m=>`
+${state.menu.map(m => `
 
 <div class="menuItem">
 
@@ -3499,7 +3780,9 @@ ${m.cat}
 
 
 ${
-m.available?
+m.available
+
+?
 
 `
 
@@ -3550,10 +3833,13 @@ Current Order
 
 <br>
 
-${
-cart.length?
 
-cart.map(i=>`
+${
+cart.length
+
+?
+
+cart.map(i => `
 
 <div class="row">
 
@@ -3570,7 +3856,7 @@ ${i.name}
 </div>
 
 <strong>
-₹${i.price*i.qty}
+₹${i.price * i.qty}
 </strong>
 
 </div>
@@ -3579,9 +3865,11 @@ ${i.name}
 
 :
 
-`<small style="color:#777">
+`
+<small style="color:#777">
 No items selected.
-</small>`
+</small>
+`
 
 }
 
@@ -3624,13 +3912,16 @@ onclick="sendKitchen()">
 
 function cartQty(id){
 
-const item=
+const item =
 cart.find(
-x=>x.id===id
+x => x.id === id
 );
 
-return item?
-item.qty:
+
+return item
+?
+item.qty
+:
 0;
 
 }
@@ -3638,22 +3929,25 @@ item.qty:
 
 function changeCart(id,change){
 
-const item=
+const item =
 state.menu.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!item||!item.available)
+
+if(!item || !item.available)
 return;
 
-let existing=
+
+let existing =
 cart.find(
-x=>x.id===id
+x => x.id === id
 );
+
 
 if(!existing){
 
-if(change>0){
+if(change > 0){
 
 cart.push({
 ...item,
@@ -3662,25 +3956,33 @@ qty:change
 
 }
 
-}else{
+}
 
-existing.qty+=change;
+else{
 
-if(existing.qty<=0){
+existing.qty += change;
 
-cart=
+
+if(existing.qty <= 0){
+
+cart =
 cart.filter(
-x=>x.id!==id
+x => x.id !== id
 );
 
 }
 
 }
 
+
 waiterDashboard();
 
 }
 
+
+/* =====================================================
+SEND TO KITCHEN
+===================================================== */
 
 function sendKitchen(){
 
@@ -3692,25 +3994,29 @@ return;
 
 }
 
-const waiter=
+
+const waiter =
 state.waiters
-.find(w=>w.active)
+.find(w => w.active)
 ?.name
 ||
 "Waiter";
 
 
-const order={
+const order = {
 
-id:Date.now()
+id:
+Date.now()
 .toString()
 .slice(-6),
 
-table:currentTable,
+table:
+currentTable,
 
 waiter,
 
-items:cart.map(i=>({
+items:
+cart.map(i => ({
 
 id:i.id,
 name:i.name,
@@ -3719,8 +4025,9 @@ qty:i.qty
 
 })),
 
-total:cart.reduce(
-(a,i)=>a+i.price*i.qty,
+total:
+cart.reduce(
+(a,i) => a + i.price * i.qty,
 0
 ),
 
@@ -3728,7 +4035,8 @@ status:"New",
 
 created:Date.now(),
 
-time:new Date()
+time:
+new Date()
 .toLocaleTimeString()
 
 };
@@ -3737,21 +4045,23 @@ time:new Date()
 state.orders.push(order);
 
 
-const table=
+const table =
 state.tables.find(
-t=>t.id===currentTable
+t => t.id === currentTable
 );
 
-table.status="Occupied";
 
-table.orderId=order.id;
+table.status = "Occupied";
+
+table.orderId = order.id;
 
 
 activity(
-"Waiter "+waiter+
-" created Order #"+
-order.id+
-" for Table "+
+"Waiter " +
+waiter +
+" created Order #" +
+order.id +
+" for Table " +
 currentTable,
 "Waiter"
 );
@@ -3761,34 +4071,41 @@ save();
 
 toast("Order sent to kitchen");
 
-currentTable=null;
 
-cart=[];
+currentTable = null;
+
+cart = [];
 
 waiterDashboard();
 
 }
 
 
-/* WAITER ORDERS */
+/* =====================================================
+WAITER ORDERS
+===================================================== */
 
 function waiterOrders(){
 
 buildSidebar();
 
-const waiter=
+
+const waiter =
 state.waiters
-.find(w=>w.active)
+.find(w => w.active)
 ?.name ||
 "Waiter";
 
-const orders=
+
+const orders =
 state.orders.filter(
-o=>o.waiter===waiter
+o => o.waiter === waiter
 );
 
 
-document.getElementById("mainContent").innerHTML=`
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -3810,12 +4127,14 @@ Track serving and payment
 <div class="panel">
 
 ${
-orders.length?
+orders.length
+
+?
 
 orders
 .slice()
 .reverse()
-.map(o=>`
+.map(o => `
 
 <div class="row">
 
@@ -3826,7 +4145,9 @@ orders
 </strong>
 
 <small>
-${o.items.map(i=>i.name+" ×"+i.qty).join(", ")}
+${o.items
+.map(i => i.name + " ×" + i.qty)
+.join(", ")}
 </small>
 
 </div>
@@ -3835,9 +4156,18 @@ ${o.items.map(i=>i.name+" ×"+i.qty).join(", ")}
 <div>
 
 <span class="status ${
-o.status==="Ready"?"ready":
-o.status==="Payment Pending"?"payment":
-o.status==="Paid"?"available":
+o.status === "Ready"
+?
+"ready"
+:
+o.status === "Payment Pending"
+?
+"payment"
+:
+o.status === "Paid"
+?
+"available"
+:
 "preparing"
 }">
 
@@ -3847,9 +4177,12 @@ ${o.status}
 
 
 ${
-o.status==="Ready"?
+o.status === "Ready"
+
+?
 
 `
+
 <br>
 
 <button
@@ -3861,14 +4194,22 @@ SERVE
 
 </button>
 
-`:""
+`
+
+:
+
+""
+
 }
 
 
 ${
-o.status==="Payment Pending"?
+o.status === "Payment Pending"
+
+?
 
 `
+
 <br>
 
 <button
@@ -3880,7 +4221,12 @@ PAYMENT
 
 </button>
 
-`:""
+`
+
+:
+
+""
+
 }
 
 </div>
@@ -3891,9 +4237,11 @@ PAYMENT
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 No orders yet.
-</div>`
+</div>
+`
 
 }
 
@@ -3908,31 +4256,35 @@ No orders yet.
 
 function serve(id){
 
-const order=
+const order =
 state.orders.find(
-o=>o.id===id
+o => o.id === id
 );
 
-if(!order)return;
 
-order.status="Payment Pending";
-
-order.served=Date.now();
+if(!order)
+return;
 
 
-const table=
+order.status = "Payment Pending";
+
+order.served = Date.now();
+
+
+const table =
 state.tables.find(
-t=>t.id===order.table
+t => t.id === order.table
 );
+
 
 if(table)
-table.status="Payment Pending";
+table.status = "Payment Pending";
 
 
 activity(
-"Waiter served Table "+
-order.table+
-" Order #"+
+"Waiter served Table " +
+order.table +
+" Order #" +
 order.id,
 "Waiter"
 );
@@ -3940,11 +4292,13 @@ order.id,
 
 save();
 
+
 toast(
-"Table "+
-order.table+
+"Table " +
+order.table +
 " served. Payment available."
 );
+
 
 waiterOrders();
 
@@ -3955,12 +4309,14 @@ waiterOrders();
 
 function payment(id){
 
-const order=
+const order =
 state.orders.find(
-o=>o.id===id
+o => o.id === id
 );
 
-if(!order)return;
+
+if(!order)
+return;
 
 
 openModal(
@@ -4022,40 +4378,45 @@ CONFIRM ₹${order.total}
 
 function completePayment(id){
 
-const order=
+const order =
 state.orders.find(
-o=>o.id===id
+o => o.id === id
 );
 
-if(!order)return;
 
-const method=
+if(!order)
+return;
+
+
+const method =
 document
 .getElementById("paymentMethod")
 .value;
 
-const phone=
+
+const phone =
 document
 .getElementById("customerPhone")
 .value
 .trim();
 
 
-order.status="Paid";
+order.status = "Paid";
 
-order.paymentMethod=method;
+order.paymentMethod = method;
 
 
-const table=
+const table =
 state.tables.find(
-t=>t.id===order.table
+t => t.id === order.table
 );
+
 
 if(table){
 
-table.status="Available";
+table.status = "Available";
 
-table.orderId=null;
+table.orderId = null;
 
 }
 
@@ -4074,7 +4435,8 @@ method,
 
 waiter:order.waiter,
 
-time:new Date()
+time:
+new Date()
 .toLocaleTimeString()
 
 });
@@ -4082,36 +4444,43 @@ time:new Date()
 
 if(phone){
 
-let customer=
+let customer =
 state.customers.find(
-c=>c.phone===phone
+c => c.phone === phone
 );
+
 
 if(!customer){
 
-customer={
+customer = {
+
 phone,
+
 visits:0,
+
 spent:0
+
 };
+
 
 state.customers.push(customer);
 
 }
 
+
 customer.visits++;
 
-customer.spent+=order.total;
+customer.spent += order.total;
 
 }
 
 
 activity(
-"Payment received for Table "+
-order.table+
-" via "+
-method+
-" ₹"+
+"Payment received for Table " +
+order.table +
+" via " +
+method +
+" ₹" +
 order.total,
 "Payment"
 );
@@ -4136,9 +4505,10 @@ function kitchenDashboard(){
 
 buildSidebar();
 
-const orders=
+
+const orders =
 state.orders.filter(
-o=>[
+o => [
 "New",
 "Preparing",
 "Ready"
@@ -4146,7 +4516,9 @@ o=>[
 );
 
 
-document.getElementById("mainContent").innerHTML=`
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -4170,28 +4542,28 @@ Incoming orders and preparation
 <div class="stat">
 <small>NEW</small>
 <strong>
-${state.orders.filter(o=>o.status==="New").length}
+${state.orders.filter(o => o.status === "New").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>PREPARING</small>
 <strong>
-${state.orders.filter(o=>o.status==="Preparing").length}
+${state.orders.filter(o => o.status === "Preparing").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>READY</small>
 <strong>
-${state.orders.filter(o=>o.status==="Ready").length}
+${state.orders.filter(o => o.status === "Ready").length}
 </strong>
 </div>
 
 <div class="stat">
 <small>OUT OF STOCK</small>
 <strong>
-${state.menu.filter(m=>!m.available).length}
+${state.menu.filter(m => !m.available).length}
 </strong>
 </div>
 
@@ -4201,15 +4573,19 @@ ${state.menu.filter(m=>!m.available).length}
 <div class="panel">
 
 ${
-orders.length?
+orders.length
+
+?
 
 orders.map(kitchenOrder).join("")
 
 :
 
-`<div class="notice">
+`
+<div class="notice">
 ✓ No active orders
-</div>`
+</div>
+`
 
 }
 
@@ -4235,17 +4611,24 @@ TABLE ${o.table}
 </h3>
 
 <p style="font-size:8px;color:#777">
-Order #${o.id} • Waiter ${o.waiter}
+
+Order #${o.id} •
+Waiter ${o.waiter}
+
 </p>
 
 </div>
 
 
 <span class="status ${
-o.status==="New"?
-"occupied":
-o.status==="Preparing"?
-"preparing":
+o.status === "New"
+?
+"occupied"
+:
+o.status === "Preparing"
+?
+"preparing"
+:
 "ready"
 }">
 
@@ -4256,7 +4639,7 @@ ${o.status}
 </div>
 
 
-${o.items.map(i=>`
+${o.items.map(i => `
 
 <div class="row">
 
@@ -4278,9 +4661,12 @@ Quantity: ${i.qty}
 
 
 ${
-o.status==="New"?
+o.status === "New"
+
+?
 
 `
+
 <button
 class="action goldAction"
 onclick="startPreparing('${o.id}')">
@@ -4288,16 +4674,23 @@ onclick="startPreparing('${o.id}')">
 🔥 START PREPARING
 
 </button>
+
 `
 
-:""
+:
+
+""
+
 }
 
 
 ${
-o.status==="Preparing"?
+o.status === "Preparing"
+
+?
 
 `
+
 <button
 class="action greenAction"
 onclick="readyOrder('${o.id}')">
@@ -4305,24 +4698,35 @@ onclick="readyOrder('${o.id}')">
 ✓ MARK READY
 
 </button>
+
 `
 
-:""
+:
+
+""
+
 }
 
 
 ${
-o.status==="Ready"?
+o.status === "Ready"
+
+?
 
 `
+
 <span class="status ready">
 
 WAITER NOTIFIED ✓
 
 </span>
+
 `
 
-:""
+:
+
+""
+
 }
 
 </div>
@@ -4334,24 +4738,29 @@ WAITER NOTIFIED ✓
 
 function startPreparing(id){
 
-const o=
+const o =
 state.orders.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!o)return;
 
-o.status="Preparing";
+if(!o)
+return;
 
-o.started=Date.now();
+
+o.status = "Preparing";
+
+o.started = Date.now();
+
 
 activity(
-"Kitchen started Order #"+
-id+
-" for Table "+
+"Kitchen started Order #" +
+id +
+" for Table " +
 o.table,
 "Kitchen"
 );
+
 
 save();
 
@@ -4362,31 +4771,38 @@ kitchenDashboard();
 
 function readyOrder(id){
 
-const o=
+const o =
 state.orders.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!o)return;
 
-o.status="Ready";
+if(!o)
+return;
 
-o.ready=Date.now();
+
+o.status = "Ready";
+
+o.ready = Date.now();
+
 
 activity(
-"Kitchen marked Order #"+
-id+
+"Kitchen marked Order #" +
+id +
 " READY. Waiter notified.",
 "Kitchen"
 );
 
+
 save();
 
+
 toast(
-"TABLE "+
-o.table+
+"TABLE " +
+o.table +
 " FOOD READY"
 );
+
 
 kitchenDashboard();
 
@@ -4399,7 +4815,10 @@ function kitchenStock(){
 
 buildSidebar();
 
-document.getElementById("mainContent").innerHTML=`
+
+document
+.getElementById("mainContent")
+.innerHTML = `
 
 <div class="pageHead">
 
@@ -4420,7 +4839,7 @@ Mark dishes available or out of stock
 
 <div class="panel">
 
-${state.menu.map(m=>`
+${state.menu.map(m => `
 
 <div class="row">
 
@@ -4439,15 +4858,19 @@ ${m.cat} • ₹${m.price}
 
 <button
 class="action ${
-m.available?
-"redAction":
+m.available
+?
+"redAction"
+:
 "greenAction"
 }"
 onclick="toggleStock(${m.id})">
 
 ${
-m.available?
-"OUT OF STOCK":
+m.available
+?
+"OUT OF STOCK"
+:
 "MARK AVAILABLE"
 }
 
@@ -4466,23 +4889,28 @@ m.available?
 
 function toggleStock(id){
 
-const item=
+const item =
 state.menu.find(
-x=>x.id===id
+x => x.id === id
 );
 
-if(!item)return;
 
-item.available=
+if(!item)
+return;
+
+
+item.available =
 !item.available;
 
 
 activity(
-"Kitchen marked "+
-item.name+
+"Kitchen marked " +
+item.name +
 (
-item.available?
-" AVAILABLE":
+item.available
+?
+" AVAILABLE"
+:
 " OUT OF STOCK"
 ),
 "Kitchen"
@@ -4491,14 +4919,18 @@ item.available?
 
 save();
 
+
 toast(
-item.name+
+item.name +
 (
-item.available?
-" is available":
+item.available
+?
+" is available"
+:
 " is out of stock"
 )
 );
+
 
 kitchenStock();
 
@@ -4517,10 +4949,12 @@ text,
 
 role:who,
 
-time:new Date()
+time:
+new Date()
 .toLocaleString()
 
 });
+
 
 save();
 
@@ -4535,11 +4969,13 @@ function openModal(title,body){
 
 document
 .getElementById("modalTitle")
-.innerText=title;
+.innerText = title;
+
 
 document
 .getElementById("modalBody")
-.innerHTML=body;
+.innerHTML = body;
+
 
 document
 .getElementById("modal")
@@ -4565,16 +5001,21 @@ TOAST
 
 function toast(message){
 
-const t=
-document.getElementById("toast");
+const t =
+document
+.getElementById("toast");
 
-t.innerText=message;
+
+t.innerText = message;
 
 t.classList.add("show");
 
+
 setTimeout(
-()=>{
+() => {
+
 t.classList.remove("show");
+
 },
 2500
 );
